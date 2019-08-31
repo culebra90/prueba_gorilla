@@ -118,8 +118,8 @@ class Util {
 
 			$sw = true;
 
-			for($x=1;$x<=max1;$x++){
-				for($z=1;$z<=$max2;$z++){
+			for($x=1;$x<=$max1-1;$x++){
+				for($z=1;$z<=$max2-1;$z++){
 					if($full_name[$x]==$valor[$z] && $full_name[$x+1] == $valor[$z+1]){
 						$sw = false;
 					}

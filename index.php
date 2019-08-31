@@ -16,8 +16,6 @@
 
 <?php
 
- error_reporting(E_ALL);
-      ini_set('display_errors', '1');
 
 require('util/util.php');
 
@@ -47,9 +45,9 @@ if(isset($_POST['pass1'],$_POST['pass2'],$_POST['pass-now'])){
 								if($obj_u->sin_consecutivas($pass1)){
 
 									echo "contraseña cambiada";
-								}
-
-								echo "sin user id";
+								}else{
+									echo "tiene por lo menos 2 caracteres consecutivos";
+								}								
 								
 							}else{
 								echo "con user id";
